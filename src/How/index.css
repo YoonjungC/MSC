@@ -1,0 +1,219 @@
+.how-container 
+{
+    height: auto;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-bottom: 30px;
+}
+
+.how-container #intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45vh;
+    z-index: -1;
+    background-color:  #849ba5;
+}
+
+.how-container #intro h1
+{
+    color: white;
+    padding-top: 15vh;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.how-container #intro p {
+    color: white;
+    width: 60%;
+}
+
+.how-container #initiatives {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.how-container #initiatives #tutoring, #review-session {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.how-container #initiatives #tutoring #title-container, 
+#review-session #title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-container #initiatives #tutoring #title-container h4,
+#review-session #title-container h4{
+    z-index: 9;
+    position: relative;
+    font-size: 40px;
+}
+
+.how-container #initiatives #tutoring #features-container,
+#review-session #features-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.how-container #initiatives #tutoring #features-container .feature,
+#review-session #features-container .feature {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.how-container #initiatives #review-session {
+    margin-bottom: 40px;
+}
+
+#blue-line {
+    background-color: rgb(170, 213, 218);
+    height: 23px;
+    width: 200px;
+    z-index: 1;
+    position: relative;
+    margin-left: -190px;
+    margin-bottom: -40px;
+}
+
+#second-blue-line {
+    background-color: rgb(170, 197, 218);
+    height: 23px;
+    width: 360px;
+    z-index: 1;
+    position: relative;
+    margin-left: -350px;
+    margin-bottom: -40px; 
+}
+
+#search-field {
+    padding-left: 7px;
+}
+
+.how-container #middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.how-container #middle #circles {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.how-container #middle #circles #circle {
+    width: 65px;
+    height: 65px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; 
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    /* transform: scale(1.5); */
+}
+
+.how-container #middle #circles h4 {
+    color: rgb(0, 144, 158);
+    font-size: 72px;
+    z-index: 3;
+    position: relative;
+    margin-left: -390px;
+    margin-top: 70px;
+    font-weight: 100;
+}
+
+.how-container #middle #circles #minicircle {
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; 
+    background-color:rgb(0, 144, 158);
+    border-radius: 50%;
+    z-index: 3;
+    position: relative;
+    margin-left: -310px;
+    margin-top: 24px;
+    /* transform: scale(1.5); */
+}
+
+.how-container #middle #events {
+    width: 80%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-top: -60px;
+}
+
+.how-container #middle #events #first{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.how-container #middle #events #row h4 {
+    font-weight: 600;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.how-container #middle #events #row p
+{
+    line-height: 1.6em;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3E4659;
+}
+
+
+#navy-line {
+    background-color: rgb(48, 106, 107);
+    height: 13px;
+    width: 300px !important;
+    z-index: 1;
+    position: relative; 
+    margin-top: -20px;
+}
+
+#third-blue-line {
+        background-color: rgb(182, 197, 233);
+        height: 23px;
+        width: 290px;
+        z-index: 1;
+        position: relative;
+        margin-left: -270px;
+        margin-bottom: -40px;   
+}

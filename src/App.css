@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#root, body, html {
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +42,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App p {
+  font-family: Inter,Verdana,Arial,Helvetica,sans-serif;
 }

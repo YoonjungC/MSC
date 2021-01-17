@@ -1,0 +1,116 @@
+#main-wrapper {
+    height: auto;
+}
+
+#main-wrapper .home {
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(91, 127, 140);
+    /* --gradient:  #42c9cb,#384661;
+    background-image: linear-gradient(to bottom right,var(--gradient)); */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#main-wrapper .home #left 
+{
+    margin-top: 14vh;
+    height: 76vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-wrapper .home #left button
+{
+    cursor: pointer;
+    border-radius: 999px;
+    border-style: solid;
+    padding: 1.5em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-width: 0px;
+    background-color: rgb(17, 36, 99);
+    color: white;
+}
+
+#main-wrapper .home #left h1
+{
+    font-size: 45px;
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: 'Biotif book', sans-serif;
+}
+
+#main-wrapper .home #left p
+{
+    font-family: 'Biotif book', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+
+#main-wrapper .home #right 
+{
+    margin-top: 14vh;
+    height: 76vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-wrapper .home #right img{
+    width: 40vh;
+}
+
+#main-wrapper .space 
+{
+    width: 100%;
+    height: 10vh;
+}
+
+/* main section */ 
+
+#main-wrapper .events
+{
+    width: 100%;
+    height: auto;
+}
+
+#main-wrapper .events h3
+{
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-bottom: 0px;
+    color: #232e45;
+    text-align: center;
+    display: block;
+    margin-block-start: 0.80em;
+    margin-block-end: 0.80em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#main-wrapper .events #features 
+{
+    background-color: rgb(246, 248, 250);
+}
+
+#main-wrapper .events #features #card-wrapper
+{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    margin-left: 10%;
+    /* padding-left: 20%; */
+}

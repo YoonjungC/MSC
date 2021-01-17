@@ -1,0 +1,92 @@
+#footer {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* background-color: #113450; */
+    background-color: #384661;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#footer h4 {
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer h5 {
+    font-size: 15px;
+    color: #6adef2;
+    display: block;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer #contact, #footer #links {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #contact {
+    margin-bottom: 20px;
+}
+
+#footer #contact p {
+    color: white;
+}   
+
+#footer #links #social {
+    width: 40%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#footer #links #social #app {
+    width: 40px;
+}
+
+#footer #info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+#footer #info #left {
+    margin-right: 40px;
+}
+
+#footer #links #social a, #useful a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer #links #useful {
+    margin-top: 15px;
+}
+
+#footer #links #useful a{
+    color: #d8d2d2;
+    margin-bottom: 40px;
+}
+
+#footer #links #useful a:hover{
+    color: #d8d2d2;
+}   
