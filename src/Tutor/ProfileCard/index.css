@@ -9,10 +9,10 @@
 
 #dummypic {
     width: "100%";
-    height: "250";
+    height: "100%";
     margin: 13px;
-    object-fit: cover;
-    border-radius: 50%; 
+    object-fit:cover;
+    border-radius: 50%;
 }
 
 

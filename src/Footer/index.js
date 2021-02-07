@@ -32,9 +32,9 @@ const Footer = () => (
               <div> 
                 <h5> Email </h5>
                 <div>
-                  <p> 230579@hkis.edu.hk </p>
-                  <p> 230579@hkis.edu.hk</p>
-                  <p> 230579@hkis.edu.hk</p>
+                  <p> 220236@hkis.edu.hk </p>
+                  <p> 210071@hkis.edu.hk</p>
+                  <p> 220610@hkis.edu.hk</p>
                 </div>
               </div>
             </div>

@@ -37,7 +37,9 @@ export default class Tutor extends React.Component {
             })
             .map(item => {
                 if (!item.time) return
-                let times = item.time.split('\n');
+                let times = item.time.split('\n'); 
+                //item.time = 
+                // "DAY7,P3\nDAY3,P1"
                 item.time = times.map(time => {
                     let value = time.split(",")
                     return {
@@ -45,6 +47,12 @@ export default class Tutor extends React.Component {
                         period: value[1]
                     }
                 })
+                if(!item.image) {
+                    item.image = "https://dl.airtable.com/.attachments/a87e06be9610f8c7962ec3e802a6b978/22bd2615/SubinShetty.jpg"
+                }
+                else {
+                    item.image = item.image[0].url
+                }
                 if (!item.course) return
                 item.course = item.course.split('\n');
                 return item
@@ -64,16 +72,16 @@ export default class Tutor extends React.Component {
             let course_data = records.map(item => {
                     return item.fields
             })
-            console.log('Course Data:', course_data)
+            // console.log('Course Data:', course_data)
             let final_courses = {}
             for(let i = 0; i<course_data.length; i++) {
-                console.log("course", course_data[i])
+                // console.log("course", course_data[i])
                 let course = course_data[i]
                 if(Object.keys(course).length){
                     final_courses[course.abr] = course
                 }
             }
-            console.log('final courses:', final_courses)
+            // console.log('final courses:', final_courses)
             this.setState({courseData: final_courses})
         })
     }
@@ -87,7 +95,7 @@ export default class Tutor extends React.Component {
     }
 
     sortCourse=(course)=> {
-        console.log('course:', course)
+        // console.log('course:', course)
         if(this.state.search.length>0) //the text input in search bar is stored in this.state.search that checks the entire course array from "All" to see which course has a name that is the same as the input course in the search bar. 
         {
             return course.name.toLowerCase().includes(this.state.search.toLowerCase()) 
@@ -101,8 +109,8 @@ export default class Tutor extends React.Component {
             if (this.state.day.length === 0) {
                 return true;
             } else {
-                const available_times = tutor.time.filter((time) => time.day === this.state.day) //array of all available times of tutor on selected day
-                return available_times.length !== 0
+                const available_days = tutor.time.filter((time) => time.day === this.state.day) //array of all available times of tutor on selected day
+                return available_days.length !== 0
             }
         })
         .filter((tutor) => {
@@ -132,9 +140,9 @@ export default class Tutor extends React.Component {
                 <div className="top">
                     <input type="text" value={this.state.search} onChange={this.onInputChange} placeholder="Search for Courses..." id="search-field"/> 
                     <div id="button-wrapper"> 
-                        <button id="all" onClick={()=>{this.onTypeChange("All")}}> All </button>
-                        <button id="math" onClick={()=>{ this.setState({ type: "Math", course: {}, day: "", period: "" })}}> Math </button>
-                        <button id="science" onClick={()=> { this.setState({ type: "Science", course: {}, day: "", period: "" })}}> Science </button>
+                        <button id="all" onClick={()=>{this.onTypeChange("All"); this.setState({ search: ""})}}> All </button>
+                        <button id="math" onClick={()=>{this.onTypeChange("Math")}}> Math </button>
+                        <button id="science" onClick={()=> {this.onTypeChange("Science")}}> Science </button>
                     <div class="dropdown"> 
                         <button class="dropbtn" id="day" onClick={()=>{ this.setState({ showDay: !this.state.showDay, showPeriod: false })}}> Day</button> 
                         { this.state.showDay ? 
