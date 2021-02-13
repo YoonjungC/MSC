@@ -26,7 +26,7 @@ class App extends React.Component {
       <Header/>
       <Switch>
           <Route exact path="/tutor">
-            <Tutor/>
+            <Tutor/> 
           </Route>
           <Route path="/about"> 
             <About/>

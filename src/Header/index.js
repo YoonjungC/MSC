@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 // import logo from "../media/msclogo.jpeg"
 
-const Header = () => (
+const Header = () => ( //functions can be components since it returns jsx
   <div id="header">
     <a id="MSC-header" href="/"> 
         <h4> The Math and Science Center </h4>
@@ -11,10 +11,10 @@ const Header = () => (
     <div className="links">
         <Link to="/">
             <p id="link-button">Home</p>
-        </Link> 
+        </Link>
         <Link to="/tutor">
             <p id="link-button">Find Tutors</p>
-        </Link> 
+        </Link>
         <Link to="/how">
             <p id="link-button">How tutoring works</p>
         </Link>  
@@ -31,4 +31,4 @@ const Header = () => (
   </div>
 )
 
-export default Header;
+export default Header; 

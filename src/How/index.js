@@ -2,7 +2,6 @@ import React from 'react';
 import fs from "fs";
 import './index.css';
 
-
 export default class How extends React.Component {
     render() {
         return (
