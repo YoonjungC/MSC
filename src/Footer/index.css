@@ -51,13 +51,13 @@
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: flex-start;
     justify-content: space-around;
 }
 
 #footer #links #social #app {
-    width: 40px;
+    width: 50%;
 }
 
 #footer #info {
