@@ -3,7 +3,7 @@ import fs from "fs";
 import './index.css';
 
 
-export default class Material extends React.Component {
+export default class Resources extends React.Component {
     render() {
         return (
             <div className="full-body"> 

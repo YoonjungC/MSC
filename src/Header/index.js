@@ -18,7 +18,7 @@ const Header = () => ( //functions can be components since it returns jsx
         <Link to="/how">
             <p id="link-button">How tutoring works</p>
         </Link>  
-        <Link to="/material">
+        <Link to="/resources">
             <p id="link-button">Resources</p>
         </Link> 
         <Link to="/schedule">

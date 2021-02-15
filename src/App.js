@@ -14,7 +14,7 @@ import Home from "./Home";
 import Tutor from "./Tutor";
 import How from "./How";
 import About from "./About";
-import Material from "./Material";
+import Resources from "./Resources";
 import Schedule from "./Schedule";
 import Footer from './Footer';
 
@@ -37,8 +37,8 @@ class App extends React.Component {
           <Route path="/schedule">
             <Schedule/>
           </Route>
-          <Route path="/material">
-            <Material/>
+          <Route path="/resources">
+            <Resources/>
           </Route>
           <Route exact path="/">
             <Home/> 
